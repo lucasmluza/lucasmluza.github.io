@@ -2671,10 +2671,12 @@ input, select, textarea {
 
 	#footer .copyright {
 		color: rgba(255, 255, 255, 0.8);
-		font-size: 0.8em;
+		font-size: 0.6em;
 		list-style: none;
-		margin: 1em 0 0 0;
+		margin: 0;
 		padding: 0;
+		position: absolute;
+  		bottom: 0;
 	}
 
 		#footer .copyright li {
