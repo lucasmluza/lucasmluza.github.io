@@ -2187,6 +2187,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+/* Tab Content */
+.tabcontent {
+	display: none;
+}
 
 /* For empty href */
 	

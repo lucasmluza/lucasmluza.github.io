@@ -73,11 +73,81 @@
 				<h3>Research</h3>
 				<p>2018 -- 2021</p>
 			</header>
-			<p>
-				Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
-				tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing 
-				eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
-			</p>
+			<h3 id="publications">Publications</h3>
+			
+			<div class="tab">
+				<button class="button" onclick="openItem(event, 'Item1')" id="startTab">Journal</button>
+				<button class="button" onclick="openItem(event, 'Item2')">Conference</button>
+			</div>
+
+			<!-- Journal Papers -->
+
+			<div id="Item1" class="tabcontent">
+				
+				<br>
+				
+				<h3>Journal Papers</h3>
+
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td>[JO58]</td>
+								<td>
+									<b>On the evaluation of FPGA radiation benchmarks</b><br>
+									G. Bricas, G. Tsiligiannis, A. Touboul, J. Boch, M. Kastriotou, C. Cazzaniga, C. D. Frost, L. Dilillo, L. Matana Luza<br>
+									<i>Microelectronics Reliability</i> 2021
+								</td>
+								<td><a href="" class="icon solid fa-link" style="margin-left: 0.5em;" target="_blank"></a></td>
+							</tr>
+							<tr>
+								<td>[JO58]</td>
+								<td>
+									<b>On the evaluation of FPGA radiation benchmarks</b><br>
+									G. Bricas, G. Tsiligiannis, A. Touboul, J. Boch, M. Kastriotou, C. Cazzaniga, C. D. Frost, L. Dilillo, L. Matana Luza<br>
+									<i>Microelectronics Reliability</i> 2021
+								</td>
+								<td><a href="" class="icon solid fa-link" style="margin-left: 0.5em;" target="_blank"></a></td>
+							</tr>
+							<tr>
+								<td>[JO58]</td>
+								<td>
+									<b>On the evaluation of FPGA radiation benchmarks</b><br>
+									G. Bricas, G. Tsiligiannis, A. Touboul, J. Boch, M. Kastriotou, C. Cazzaniga, C. D. Frost, L. Dilillo, L. Matana Luza<br>
+									<i>Microelectronics Reliability</i> 2021
+								</td>
+								<td><a href="" class="icon solid fa-link" style="margin-left: 0.5em;" target="_blank"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+			<!-- Conference Papers -->
+
+			<div id="Item2" class="tabcontent">
+				<br>
+
+				<h3>Conferences with Reading Committee and Proceedings</h3>
+
+				<div class="table-wrapper">
+					<table>
+						<tbody>
+							<tr>
+								<td>[JO58]</td>
+								<td>
+									<b>On the evaluation of FPGA radiation benchmarks</b><br>
+									G. Bricas, G. Tsiligiannis, A. Touboul, J. Boch, M. Kastriotou, C. Cazzaniga, C. D. Frost, L. Dilillo, L. Matana Luza<br>
+									<i>Microelectronics Reliability</i> 2021
+								</td>
+								<td><a href="" class="icon solid fa-link" style="margin-left: 0.5em;" target="_blank"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
 		</section>
 
 		<!-- Contact -->
@@ -149,6 +219,18 @@
 				document.getElementById("list").innerHTML = 'Academic <span class="icon solid fa-angle-up"></span></a>';
 			}
 		}
+
+		function openItem(evt, itemName) {
+				var i, tabcontent;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				document.getElementById(itemName).style.display = "block";
+			}
+			$(document).ready(function(){
+				$("#startTab").click()
+			});
 
 	</script>
 
