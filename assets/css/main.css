@@ -2188,6 +2188,12 @@ input, select, textarea {
 	}
 
 
+/* For empty href */
+	
+.clickable {
+	cursor: pointer;
+}
+
 /* HR Gradient */
 #wrap {
 	overflow:hidden;
