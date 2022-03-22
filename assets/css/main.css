@@ -273,7 +273,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 736px) {
 
 			.container {
 				width: 100% !important;
@@ -282,7 +282,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 400px) {
 
 			.container {
 				max-width: calc(100% - 3em);
@@ -1023,7 +1023,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 736px) {
 
 			.row {
 				display: flex;
@@ -1268,7 +1268,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 480px) {
 
 			.row {
 				display: flex;
@@ -1513,7 +1513,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 400px) {
 
 			.row {
 				display: flex;
@@ -2310,7 +2310,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 400px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3052,7 +3052,7 @@ input, select, textarea {
 
 /* Medium */
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -3134,7 +3134,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 480px) {
 
 		/* Basic */
 
@@ -3212,7 +3212,7 @@ input, select, textarea {
 
 /* XSmall */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 400px) {
 
 		/* Header */
 
