@@ -2659,6 +2659,10 @@ input, select, textarea {
 			border-bottom: none;
 		}
 
+		#header .sublist li {
+			font-size: 0.9em;
+		}
+
 /* Footer */
 
 	#footer .icons {

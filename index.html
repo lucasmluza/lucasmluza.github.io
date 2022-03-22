@@ -23,8 +23,16 @@
 			<a href="#top" class="image avatar"><img src="images/profile.jpg"></a>
 			<ul class="menu">
 				<li><a href="#top">Home</a></li>
-				<li><a href="#academic">Academic</a></li>
+				<div id="wrap"><div id="gradient"></div></div>
 				<li><a href="#professional">Professional</a></li>
+				<div id="wrap"><div id="gradient"></div></div>
+				<li class="clickable"><a id="list">Academic <span class="icon solid fa-angle-down"></span></a></li>
+				<ul class="sublist" id="sublist" style="display: none;">
+					<li><a href="#eduation">Eduation</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#awards">Awards</a></li>
+				</ul>
+				<div id="wrap"><div id="gradient"></div></div>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
@@ -128,6 +136,21 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script type="text/javascript">
+		
+		document.getElementById("list").onclick = function(ev){
+			if (document.getElementById("sublist").style.display == "block") {
+				document.getElementById("sublist").style.display = "none";
+				document.getElementById("list").innerHTML = 'Academic <span class="icon solid fa-angle-down"></span></a>';
+			}
+			else {
+				document.getElementById("sublist").style.display = "block";
+				document.getElementById("list").innerHTML = 'Academic <span class="icon solid fa-angle-up"></span></a>';
+			}
+		}
+
+	</script>
 
 </body>
 
