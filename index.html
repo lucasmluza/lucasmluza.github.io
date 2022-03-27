@@ -557,10 +557,12 @@
 		document.getElementById("list").onclick = function(ev){
 			if (document.getElementById("sublist").style.display == "block") {
 				document.getElementById("sublist").style.display = "none";
+				document.getElementById("list").style.color = "#FFFFFFCC"
 				document.getElementById("list").innerHTML = 'Academic <span class="icon solid fa-angle-down"></span></a>';
 			}
 			else {
 				document.getElementById("sublist").style.display = "block";
+				document.getElementById("list").style.color = "#49bf9d"
 				document.getElementById("list").innerHTML = 'Academic <span class="icon solid fa-angle-up"></span></a>';
 			}
 		}
