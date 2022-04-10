@@ -2418,14 +2418,23 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #efefef;
+			border-top: solid 1px #efefef;
+			border-bottom: solid 1px #efefef;
 			border-left: 0;
 			border-right: 0;
 		}
+		
+			table tbody tr:first-child {
+				border-top: 0;
+			}
 
 			table tbody tr:nth-child(2n + 1) {
 				/* background-color: #f7f7f7; */
 				background-color: none;
+			}
+
+			table tbody tr:last-child {
+				border-bottom: 0;
 			}
 
 		table td {
